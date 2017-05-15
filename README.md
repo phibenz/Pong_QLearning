@@ -25,7 +25,10 @@ pypong/NeuralAgent.py shows the implemented agent.
 
 ## Usage
 If all parameters are set the training or game can be started with `python3 runPyPong.py`.  
-In the current configuration (see runPyPong.py), this command loads a state after 100.000.000 training steps. The neural network is set up to three hidden layers with 40 nodes each (see pypong/q_network.py). 
+You can download an example [DataSet and Netfile](https://drive.google.com/drive/folders/0B7dEhv2cpxLQRGdqby1OZktkc0U?usp=sharing). Store those files in the folder DataSets and NetFiles, respectively. You can also download the learning1.csv and reward1.csv, which store the loss information and the accumulated reward over one testing epoch. These Files can be stored in the LearningFile folder.  
+In the current configuration (see runPyPong.py), this command loads a state after 100.000.000  training steps (for this the aforementioned files have to be downloaded). The neural network is set up to three hidden layers with 40 nodes each (see pypong/q_network.py).  
+If you don't want to download the files and see the initial behavior of the agent, then set the `LOAD_NET_NUMBER` parameter in runPyPong.py to `0`.  
+If you want to train the network set `TRAINING` to `True`.
 
 ## Game structure
 Q-Learning is based on Markov Decision Processes ([MDP](https://en.wikipedia.org/wiki/Markov_decision_process)). Therefore states, actions, and rewards have

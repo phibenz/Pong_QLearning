@@ -1,0 +1,9 @@
+pypong/*.pyc
+WeightPics/*
+Archive/*
+pypong/__pycache__/*
+__pycache__/*
+clean
+showLF
+RewardFile.png
+LearningFile.png
